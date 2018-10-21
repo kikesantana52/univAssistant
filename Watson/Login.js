@@ -12,12 +12,22 @@
 
     watsonAssistant.message({
       workspace_id: 'aaf31d3d-9705-44f8-8a7e-340571891d3c',
-      input: {'text': "Olvide"},
+      input: {'text': "Quiero saber mis contraseñas"},
       options:true
     },  function(err, response) {
       if (err)
         console.log('error:', err);
-      else
-        console.log(response);
+      else{
+        if (response.output.generic[0].options) {
+          response.output.generic[0].options.forEach(function(element) {
+            console.log(element);
+          });
+
+        }else{
+          console.log(response.output.text[0]);
+        }
+
+      }
+
     });
 // }
