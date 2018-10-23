@@ -4,7 +4,7 @@ import {View, StyleSheet, ImageBackground, Text, TouchableHighlight} from 'react
 class Home extends Component{
 
     goToMainScreen(){
-        this.props.navigation.navigate('Main');
+        this.props.navigation.navigate('Chat'); //Main
     }
 
     render(){
