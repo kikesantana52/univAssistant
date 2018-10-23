@@ -7,7 +7,7 @@
       url: 'https://gateway.watsonplatform.net/assistant/api'
     });
   let params = {
-    workspace_id: 'aaf31d3d-9705-44f8-8a7e-340571891d3c',
+    workspace_id: '5ce619b6-315a-44fc-8231-2fe25b47c1f8',
     options:true,
     input: {'text': "Quiero saber mis contraseñas"},
   }
